@@ -1,0 +1,13 @@
+number= 2
+number = 2
+guesses = 1
+while guesses <= 4:
+    guess = int(input("Guess a number betweeen 1 to 10: "))
+    if guess == number:
+        print("Nice luck the number " + str(guess))
+        break
+    else:
+        print("Try again.")
+        guesses +=1
+else:
+    print("Sorry, you reached the maximum number of attempts.")
